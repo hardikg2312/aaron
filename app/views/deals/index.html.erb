@@ -1,0 +1,23 @@
+<div class="main_container">
+  <div class="categories_container">
+   
+    <span class="categories_container_item"><%= link_to "All", deals_path( :catogory => "all") %></span>
+    <% @categories.each do |c| %>
+      <span class="categories_container_item"><%= link_to c.name.capitalize, deals_path(:catogory => c.slug) %></span>
+    <% end %>
+  </div>
+  <br>
+  <div class="deals_container">
+    <div class="deals_container_header" >
+      <% if @category %>
+        <div><%= "#{@category.name.capitalize} Deals"  %></div>
+      <% else %>
+        <div>All Deals</div>
+      <% end %>
+    </div>
+    <br><br>
+    <%= render 'deals' , :deals => @deals %>
+  </div>
+  <div class="view_more_class" align="center"><%= link_to "View More",deals_path(:page => @page + 1 ), :remote => true  %></div>
+
+</div>

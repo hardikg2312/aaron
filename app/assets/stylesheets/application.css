@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+a, a:link, a:visited{
+  text-decoration: none;
+  color: #0084B4;
+}
+body{
+	background-color: #E5E5E5;
+}
+
+.main_container{
+  padding-top: 18px;
+  margin: auto;
+  width: 90%;
+}
+.logo{
+  margin: 5px;
+  float: left;
+}
+.categories_container{
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #0084B4;
+	height: auto;
+}
+
+.categories_container_item{
+	margin: 5px;
+	float: left;
+  border: 1px solid silver;
+  padding: 4px;
+}
+
+.deals_container{
+	clear: both;
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.follow_link{
+  font-size: 18px;
+  padding: 5px;margin: 5px;
+}
+.deals_container_header{height: 30px; font-size: 1.2em;font-weight: bold;background-color: #0084B4;color: #ffffff;}
+.deals_container_header div{padding-top: 5px; width: 96%;margin: 2%;}
+.deals_container_item{
+	float: left;
+	width: 22%;
+	height: 400px;
+	margin-left: 1%;
+	margin-right: 1%;
+	border: 1px solid #0084B4;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+.deals_container_item:hover {
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(37,37,37,1);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(37,37,37,1);
+  box-shadow: 0px 0px 7px 1px rgba(37,37,37,1);
+}
+.deals_container_item_title{width: 92%;margin: 2%;background-color: #0084B4;color: #ffffff;border-radius: 4px;padding: 2%;}
+.deals_container_item_img{width: 96%;margin: 2%;height: 200px;}
+.deals_container_item_description{width: 96%;font-size: 1.1em; color: #8B8B8B;margin: 2%;}
+.deals_container_item_price{width: 96%;margin: 2%; font-size: 1.75em; color: #002245;font-weight: bold;}
+.deals_container_item_real_price{margin-left: 5px; font-size: 0.7em;color:#8B8B8B; text-decoration:line-through;font-weight: normal; }
+.deals_container_item_deal_url_div{width: 100%;}
+.deals_container_item_deal_url_div a {color: #ffffff;}
+.deals_container_item_deal_url_div div{
+	width: 40%;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(37,37,37,1);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(37,37,37,1);
+  box-shadow: 0px 0px 1px 1px rgba(37,37,37,1);
+	height: 30px;
+	padding-top: 10px;
+	border-radius: 10px;
+	background-color:#DB4500;
+	font-weight: bold;
+	font-size: 1.8em }
+.deals_container_item_deal_url_div div:hover{
+	-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  background-color: #C13D00;
+}
+.deals_container_item_deal_url{width: 200px;height: 30px;}
+.view_more_class{clear: both;font-size: 1.5em; font-weight: bold;padding-top: 15px;padding-bottom: 30px;}
